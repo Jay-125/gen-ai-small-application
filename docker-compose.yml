@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  csv-ui-app:
+    image: app:1.0
+    container_name: csv_ui_app_container
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix  # Mounts the X11 socket from the host to the container, allowing the container to communicate with the X server
+    stdin_open: true  # Keeps stdin open for interactive mode
+    user: "appuser"
+    environment:
+      - DISPLAY=$DISPLAY
+    command: ["/app/run_script.sh"]  # Overrides the default CMD in the Dockerfile if needed
+
