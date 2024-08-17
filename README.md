@@ -73,12 +73,7 @@ docker images
 docker-compose up
 ```
 3. Once the command fired successfully, it should create a container and will show the log in terminal if not running in detached mode as above. **docker-compose up -d**
-
-    ![docker container](./screenshots/pic-6.png)
-
 Instead of recreating, it must say **creating <conatiner-name>**, if it is creating for the first time.
-
-![docker container 2](./screenshots/pic-7.png)
 
 # Run application without Docker
 
