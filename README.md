@@ -109,8 +109,6 @@ uvicorn main:app --reload
 ```
 3. This should expose an api to send data to llm.
 
-    ![fast api output](./screenshots/pic-5.png)
-
 ## Run the main application.
 
 1. Move to the root folder **Jay_Pathak_Assignment**.
